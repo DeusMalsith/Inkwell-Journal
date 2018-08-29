@@ -1,0 +1,11 @@
+METHOD		Path					Purpose
+----------------------------------------------------
+
+GET			/						Home
+GET			/auth/login				Form for login
+POST		/auth/login				login + auth user
+GET			/auth/signup			form to register
+POST		/auth/signup			creates new user + checks for dupes
+GET			/auth/logout			log out, redirect to home
+GET			/profile				needs to be visited only by a logged in user. 
+									Otherwrise redirect to Home

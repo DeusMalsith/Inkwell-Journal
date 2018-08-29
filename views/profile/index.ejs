@@ -1,0 +1,14 @@
+<h2><%= currentUser.firstname%>'s Profile</h2>
+
+<div class="row">
+	<div class="col s6">
+		<img src="<%= currentUser.image%>" class="responsive-img">
+	</div>
+	<div class="col s6">
+		<h4>Your Info</h4>
+		<p>First Name: <%= currentUser.firstname%></p>
+		<p>Last Name: <%= currentUser.lastname%></p>
+		<p>Admin Status: <%= currentUser.admin ? 'yes' : 'no'%></p>
+		<p>Email: <%= currentUser.email%></p>
+	</div>
+</div>
