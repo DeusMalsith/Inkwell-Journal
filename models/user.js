@@ -22,14 +22,15 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     dob: DataTypes.DATE,
-    image: {
-      type: DataTypes.STRING,
-      validate: {
-        isUrl: {
-          msg: 'No picture?'
-        }
-      }
-    }
+    image: DataTypes.STRING
+    // {
+    //   type: DataTypes.STRING,
+    //   validate: {
+    //     isUrl: {
+    //       msg: 'No picture?'
+    //     }
+    //   }
+    // }
   }, {
     hooks: {
       beforeCreate: function(pendingUser) {
