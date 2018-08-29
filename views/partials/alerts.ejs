@@ -1,7 +1,7 @@
 <%if(alerts.success) {%>
 	<% alerts.success.forEach(function(msg){%>
 		<div class="row">
-			<div class="card green darken-4">
+			<div class="card-panel green darken-4 flow-text center-align">
 			<%= msg%>
 			</div>
 		</div>
@@ -11,7 +11,7 @@
 <%if(alerts.error) {%>
 	<% alerts.error.forEach(function(msg){%>
 		<div class="row">
-			<div class="card red darken-4">
+			<div class="card-panel red darken-4 flow-text center-align">
 			<%= msg%>
 			</div>
 		</div>

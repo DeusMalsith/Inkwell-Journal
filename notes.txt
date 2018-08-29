@@ -1,11 +1,6 @@
-METHOD		Path					Purpose
-----------------------------------------------------
+1. Plan out entires table (schema) UserID for include 
 
-GET			/						Home
-GET			/auth/login				Form for login
-POST		/auth/login				login + auth user
-GET			/auth/signup			form to register
-POST		/auth/signup			creates new user + checks for dupes
-GET			/auth/logout			log out, redirect to home
-GET			/profile				needs to be visited only by a logged in user. 
-									Otherwrise redirect to Home
+Id, UserID, Title, Content Public (Boolean)
+
+2. Wireframe
+
