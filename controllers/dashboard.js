@@ -8,12 +8,9 @@ var router = express.Router();
 var loggedIn = require('../middleware/loggedIn');
 
 //Define routes
-router.get('/', loggedIn, function(req, res) {
-	res.render('profile/index');
-});
 
-router.get('/edit', loggedIn, function(req, res) {
-	res.send('PROFILE EDIT PAGE');
-});
+router.get('/', loggedIn, function(req, res) {
+	res.send('DASHBOARD');
+})
 
 module.exports = router;

@@ -36,10 +36,11 @@ app.use(function(req, res, next) {
 // Include controllers
 app.use('/auth', require('./controllers/auth'));
 app.use('/profile', require('./controllers/profile'));
+app.use('/dashboard', require('./controllers/dashboard'));
 
 // Define routes
 app.get('/', function(req, res) {
-	res.render('home');
+	res.render('../views/auth/login');
 });
 
 // Listen on port 3000

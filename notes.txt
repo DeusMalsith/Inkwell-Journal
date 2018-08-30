@@ -4,3 +4,4 @@ Id, UserID, Title, Content Public (Boolean)
 
 2. Wireframe
 
+3. Stub routes and then views
