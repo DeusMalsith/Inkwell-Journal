@@ -2,8 +2,9 @@
     <div class="nav-wrapper grey darken-4">
       <a href="#" class="brand-logo center">Inkwell</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="/">Home</a></li>
         <%if(currentUser){%>
+        <li><a href="/">Dashboard</a></li>
+        <li><a href="/journal">Journal</a></li>
         <li><a href="/profile">Profile</a></li>
         <li><a href="/auth/logout">Logout</a></li>
       <%} else {%>

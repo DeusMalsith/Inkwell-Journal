@@ -8,6 +8,7 @@ var express = require('express');
 var flash = require('connect-flash')
 var passport = require('./config/passportConfig');
 var session = require('express-session');
+var loggedIn = require('./middleware/loggedIn');
 
 // Declare app variable
 var app = express();
@@ -37,10 +38,17 @@ app.use(function(req, res, next) {
 app.use('/auth', require('./controllers/auth'));
 app.use('/profile', require('./controllers/profile'));
 app.use('/dashboard', require('./controllers/dashboard'));
+app.use('/journal', require('./controllers/journal'));
+app.use('/public', require('./controllers/public'));
+
 
 // Define routes
 app.get('/', function(req, res) {
-	res.render('../views/auth/login');
+	if (loggedIn) {
+		res.redirect('/dashboard');
+	} else {
+	res.render('../views/auth/login');		
+	}
 });
 
 // Listen on port 3000

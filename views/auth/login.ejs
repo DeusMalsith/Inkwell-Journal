@@ -1,19 +1,23 @@
 <h2>Log in</h2>
 
-<form action="/auth/login" method="POST">
-	<div class="row">
-		<div class="input-field col s12 m6">
-			<label for="email">Email</label>
-			<input type="email" id="email" name="email" class="validate" required>
+<div class="section">
+	<form action="/auth/login" method="POST">
+		<div class="row">
+			<div class="input-field col s12 m6">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" class="validate" required>
+			</div>
+
+
+			<div class="input-field col s12 m6">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" class="validate" required>
+			</div>
+			<button class="btn waves-effect waves-light grey" type="submit" name="action">Log in
+			  <i class="material-icons right">send</i>
+			</button>
 		</div>
-		<div class="input-field col s12 m6">
-			<label for="password">Password</label>
-			<input type="password" id="password" name="password" class="validate" required>
-		</div>
-		<button class="btn waves-effect waves-light grey" type="submit" name="action">Log in
-		  <i class="material-icons right">send</i>
-		</button>
-	</div>
-</form>
+	</form>
+<div>
 		
 

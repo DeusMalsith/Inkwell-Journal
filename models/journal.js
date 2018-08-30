@@ -4,7 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     userId: DataTypes.INTEGER,
     title: DataTypes.STRING,
     content: DataTypes.TEXT,
-    public: DataTypes.BOOLEAN
+    public: DataTypes.BOOLEAN,
+    image: DataTypes.STRING
   }, {});
   journal.associate = function(models) {
     models.journal.belongsTo(models.user);

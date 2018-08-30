@@ -1,0 +1,9 @@
+body {
+	background-image: url('../img/woodbackground.jpg');
+	background-size: cover no-repeat;
+	color: white;
+}
+
+#profileimage {
+	width: 350px;
+}

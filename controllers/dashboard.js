@@ -10,7 +10,7 @@ var loggedIn = require('../middleware/loggedIn');
 //Define routes
 
 router.get('/', loggedIn, function(req, res) {
-	res.send('DASHBOARD');
+	res.render('dashboard/dashboard');
 })
 
 module.exports = router;
