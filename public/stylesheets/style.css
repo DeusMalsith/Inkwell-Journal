@@ -23,3 +23,12 @@ body {
 #test {
 	text-align: center;
 }
+
+#editor-container {
+	background: white;
+}
+
+#editor {
+	height: 400px;
+	color: black;
+}
