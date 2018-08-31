@@ -7,3 +7,19 @@ body {
 #profileimage {
 	width: 350px;
 }
+
+#login-form {
+	background-color: grey;
+	position: relative;
+	margin-top: 20%;
+	text-align: center;
+	max-width: 500px;
+}
+
+#profile-name {
+	text-align: center;
+}
+
+#test {
+	text-align: center;
+}

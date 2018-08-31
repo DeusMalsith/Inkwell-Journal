@@ -13,7 +13,7 @@ router.get('/', loggedIn, function(req, res) {
 });
 
 router.get('/edit', loggedIn, function(req, res) {
-	res.send('PROFILE EDIT PAGE');
+	res.render('profile/edit');
 });
 
 module.exports = router;

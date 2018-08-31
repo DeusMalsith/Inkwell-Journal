@@ -13,12 +13,13 @@ router.get('/', loggedIn, function(req, res) {
 	res.render('journal/journal');
 });
 
+router.get('/new', loggedIn, function(req, res) {
+	res.render('journal/new');
+});
+
 router.get('/:id', loggedIn, function(req, res) {
 	res.render('journal/journal');
 });
 
-router.get('/new', loggedIn, function(req, res) {
-	res.render('journal/new');
-});
 
 module.exports = router;
