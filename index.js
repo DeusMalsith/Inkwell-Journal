@@ -44,10 +44,10 @@ app.use('/public', require('./controllers/public'));
 
 // Define routes
 app.get('/', function(req, res) {
-	if (loggedIn) {
+	if (req.user) {
 		res.redirect('/dashboard');
 	} else {
-	res.render('../views/auth/login');		
+		res.redirect('/auth/login');		
 	}
 });
 
