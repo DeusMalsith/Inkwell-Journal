@@ -5,7 +5,7 @@ require('dotenv').config();
 var bodyParser = require('body-parser');
 var ejsLayouts = require('express-ejs-layouts');
 var express = require('express');
-var flash = require('connect-flash')
+var flash = require('connect-flash');
 var passport = require('./config/passportConfig');
 var session = require('express-session');
 var loggedIn = require('./middleware/loggedIn');

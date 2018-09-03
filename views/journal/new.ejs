@@ -6,6 +6,13 @@
 
 <h2>NEW JOURNAL ENTRY</h2>
 <form id="theform" method="POST" action="/journal">
+	<div class="row">
+	        <div class="input-field col s6">
+	          <input placeholder="Your title here" id="journaltitleinput" type="text" class="validate">
+	          <label for="title">Journal Title</label>
+	        </div>
+	</div>
+
 	<div id="editor-container">
 		<div id="editor">
 
@@ -13,6 +20,17 @@
 
 	
 	</div>
+
+	<div class="switch">
+		<p><u>Public Entry:</u></p>
+	  <label for="public">
+	    Off
+	    <input type="checkbox">
+	    <span class="lever"></span>
+	    On
+	  </label>
+	</div>
+
 	<div>
 		<br />
 		<button class="btn waves-effect waves-light grey right" type="submit" name="action">Submit
@@ -60,7 +78,7 @@
 
   document.getElementById('theform').addEventListener('submit', function(e){
   	e.preventDefault();
-  	console.log('hello');
+  	// console.log(quill.getContent());
   	var editor = document.getElementById('editor');
   	console.log(editor.children[0].innerHTML);
   })
