@@ -520,28 +520,11 @@
 	"buffers":
 	[
 		{
-			"file": "controllers/journal.js",
-			"settings":
-			{
-				"buffer_size": 594,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "views/journal/new.ejs",
 			"settings":
 			{
-				"buffer_size": 1857,
+				"buffer_size": 2287,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "models/journal.js",
-			"settings":
-			{
-				"buffer_size": 374,
 				"line_ending": "Unix"
 			}
 		},
@@ -549,41 +532,33 @@
 			"file": "index.js",
 			"settings":
 			{
-				"buffer_size": 1440,
+				"buffer_size": 1441,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "controllers/auth.js",
+			"file": "controllers/journal.js",
 			"settings":
 			{
-				"buffer_size": 1440,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/config.json",
-			"settings":
-			{
-				"buffer_size": 400,
+				"buffer_size": 595,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "views/profile/index.ejs",
+			"file": ".env",
 			"settings":
 			{
-				"buffer_size": 564,
+				"buffer_size": 155,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/stylesheets/style.css",
+			"file": "views/journal/journal.ejs",
 			"settings":
 			{
-				"buffer_size": 425,
+				"buffer_size": 67,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -668,21 +643,22 @@
 	],
 	"file_history":
 	[
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/public/stylesheets/style.css",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/journal.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/index.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/auth.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/config/config.json",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/profile/index.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/new.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/auth/login.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/profile/edit.ejs",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/public/stylesheets/style.css",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/profile.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/notes.txt",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/README.md",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/layout.ejs",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/journal.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/auth.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/partials/navbar.ejs",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/new.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/dashboard.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/profile/index.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/public.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/index.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/dashboard/dashboard.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/journal.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/public/public.ejs",
@@ -699,7 +675,6 @@
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/models/user.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/notes2.txt",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/package.json",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/config/config.json",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/readme.md",
 		"/home/justinrashall/GA-WDI/Treehouse_Education/flashcards/routes/cards.js",
 		"/home/justinrashall/GA-WDI/Treehouse_Education/flashcards/views/app.pug",
@@ -864,24 +839,82 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "controllers/journal.js",
+					"file": "views/journal/new.ejs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 594,
+						"buffer_size": 2287,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								399,
-								399
+								993,
+								993
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/EJS 2/EJS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								710,
+								710
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "controllers/journal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 595,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
 							]
 						],
 						"settings":
@@ -892,221 +925,70 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "views/journal/new.ejs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1857,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1855,
-								1855
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/EJS 2/EJS.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 459.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "models/journal.js",
-					"semi_transient": true,
+					"buffer": 3,
+					"file": ".env",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 374,
+						"buffer_size": 155,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								155,
+								155
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1440,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1440,
-								1440
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 204.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "controllers/auth.js",
+					"file": "views/journal/journal.ejs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1440,
+						"buffer_size": 67,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1181,
-								1181
+								67,
+								67
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 153.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "config/config.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 400,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								400,
-								400
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/EJS 2/EJS.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "views/profile/index.ejs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 564,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/EJS 2/EJS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 7,
-					"file": "public/stylesheets/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 425,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								425,
-								425
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
