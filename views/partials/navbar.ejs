@@ -3,8 +3,9 @@
       <a href="#" class="brand-logo center">Inkwell</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <%if(currentUser){%>
-        <li><a href="/">Dashboard</a></li>
         <li><a href="/journal">Journal</a></li>
+        <li><a href="/journal/new">New Entry</a></li>
+        <li><a href="/public">Public Entries</a></li>
         <li><a href="/profile">Profile</a></li>
         <li><a href="/auth/logout">Logout</a></li>
       <%} else {%>

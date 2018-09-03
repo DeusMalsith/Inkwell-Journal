@@ -45,7 +45,7 @@ app.use('/public', require('./controllers/public'));
 // Define routes
 app.get('/', function(req, res) {
 	if (req.user) {
-		res.redirect('/dashboard');
+		res.redirect('/journal');
 	} else {
 		res.redirect('/auth/login');		
 	}

@@ -1,3 +1,14 @@
 <h2>JOURNAL</h2>
 
 <a href="journal/new" type="submit">New Entry</a>
+
+<%journals.forEach(function(journal) {%>
+	<div>
+		<hr>
+		<h4>
+			<a href="/journal/<%= journal.id%>">
+				<%= journal.title%>
+			</a>
+		</h4>
+	</div>
+<%});%>
