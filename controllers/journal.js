@@ -17,6 +17,11 @@ router.get('/new', loggedIn, function(req, res) {
 	res.render('journal/new');
 });
 
+router.post('/', loggedIn, function(req, res) {
+	res.send(req.body);
+	console.log(req.body);
+})
+
 router.get('/:id', loggedIn, function(req, res) {
 	res.render('journal/journal');
 });

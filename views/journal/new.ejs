@@ -5,7 +5,7 @@
 <!-- Create the editor container -->
 
 <h2>NEW JOURNAL ENTRY</h2>
-<form method="POST" action="/journal/:id">
+<form id="theform" method="POST" action="/journal">
 	<div id="editor-container">
 		<div id="editor">
 
@@ -57,6 +57,13 @@
 	  placeholder: 'Write your entry here...',
 	  theme: 'snow'
 	});
+
+  document.getElementById('theform').addEventListener('submit', function(e){
+  	e.preventDefault();
+  	console.log('hello');
+  	var editor = document.getElementById('editor');
+  	console.log(editor.children[0].innerHTML);
+  })
 </script>
 
 
