@@ -13,24 +13,24 @@ var db = require('../models');
 // Define routes
 
 router.get('/', loggedIn, function(req, res) {
-	db.journal.findAll({
-	where: {
-	    userId: req.user.id
-	}
+    db.journal.findAll({
+    where: {
+        userId: req.user.id
+    }
     }).then(function(userJournals) {
-	res.render('journal/journal', {journals: userJournals})
+    res.render('journal/journal', {journals: userJournals})
     });
 });
 
 router.get('/new', loggedIn, function(req, res) {
-	res.render('journal/new');
+    res.render('journal/new');
 });
 
 router.post('/', loggedIn, function(req, res) {
     var params = (req.body);
     params.userId = req.user.id;
     db.journal.create(params).then(function(createdJournal) {
-	res.send(createdJournal);
+    res.send(createdJournal);
     });
    // res.send(params);
     console.log(params);
@@ -56,6 +56,5 @@ router.delete('/:id', loggedIn, function(req, res) {
     res.send("success!");
     });
 });
-
 
 module.exports = router;

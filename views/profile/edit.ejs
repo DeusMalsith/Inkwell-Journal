@@ -1,1 +1,26 @@
-<h2>PROFILE EDIT PAGE</h2>
+<div class="container" id="editform">
+	<h2 class="center-align form-text-white">Edit Profile</h2>
+	<form id="edit-journal" action="/profile/edit" method="PUT">
+		<div class="row">
+			<div class="input-field col s12 m6">
+				<label for="firstname">First Name</label>
+				<input type="text" value="<%= userData.firstname%>" id="firstname" name="firstname" class="validate form-text-white" required>
+			</div>
+			<div class="input-field col s12 m6">
+				<label for="lastname">Last Name</label>
+				<input type="text" value="<%= userData.lastname%>" id="lastname" name="lastname" class="validate form-text-white" required>
+			</div>
+			<div class="input-field col s12 m6">
+				<label for="image">Profile Picture</label>
+				<input type="url" value="<%= userData.image%>" class="form-text-white"  id="image" name="image">
+			</div>
+			<div class="input-field col s12 m6">
+				<label for="email">Email</label>
+				<input type="email" value="<%= userData.email%>"  id="email" name="email" class="validate form-text-white" required>
+			</div>
+			<button class="btn waves-effect waves-light grey right" type="submit" name="action">Submit
+			  <i class="material-icons right">send</i>
+			</button>
+		</div>
+	</form>
+</div>

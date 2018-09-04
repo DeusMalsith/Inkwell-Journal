@@ -14,7 +14,7 @@ $(document).ready(function() {
 		});
 	});
 
-    $('#edit-journal').submit(function(e) {
+    	$('#edit-journal').submit(function(e) {
 		e.preventDefault();
 		console.log('about to submit PUT req');
 		var url = $(this).attr('action');
@@ -28,6 +28,5 @@ $(document).ready(function() {
 		}).fail(function(err) {
 			console.log('Profile Edit Error', err);
 		});
-	});
-	
+    	});
 });

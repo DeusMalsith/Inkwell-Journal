@@ -18,6 +18,23 @@ p {
 	width: 350px;
 }
 
+#profiledisplay {
+	background-color: #262626;
+	padding: 20px;
+	border-radius: 20px;
+	margin-top: 50px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*Edit Profile CSS*/
+#editform {
+	background-color: #262626;
+	padding: 20px;
+	border-radius: 20px;
+	margin-top: 100px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
 /*Signup CSS*/
 #signupform {
 	background-color: #262626;
@@ -62,6 +79,15 @@ p {
 #editor {
 	height: 400px;
 	color: black;
+}
+
+#new-entry-form {
+	background-color: #262626;
+	padding: 60px;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 /*Journal List CSS*/
