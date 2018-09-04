@@ -93,9 +93,11 @@ p {
 /*Journal List CSS*/
 #journal-list {
 	position: relative;
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-left: -100px;
 	max-width: 400px;
+	max-height: 670px;
+	overflow-y: auto;
 }
 
 /*Journal Show CSS*/
