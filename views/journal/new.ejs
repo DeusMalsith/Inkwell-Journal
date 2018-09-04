@@ -4,16 +4,18 @@
 
 <!-- Create the editor container -->
 
-<h2>NEW JOURNAL ENTRY</h2>
+<div class="center-align">
+	<h2>NEW JOURNAL ENTRY</h2>
+</div>
 <form id="theform" method="POST" action="/journal">
 	<div class="row">
 	        <div class="input-field col s6">
-	          <input placeholder="Your title here" id="journaltitleinput" type="text" class="validate">
+	          <input placeholder="Your title here" id="journaltitleinput" type="text" class="validate form-text-white">
 	          <label for="title">Journal Title</label>
 	        </div>
 	</div>
 
-	<div class="file-field input-field">
+<!-- 	<div class="file-field input-field">
 	  <div class="btn">
 	    <span>Main Image</span>
 	    <input type="file">
@@ -21,7 +23,7 @@
 	  <div class="file-path-wrapper">
 	    <input class="file-path validate" type="text">
 	  </div>
-	</div>
+	</div> -->
 
 	<div id="editor-container">
 		<div id="editor">
@@ -89,21 +91,21 @@
 	  theme: 'snow'
 	});
 
-  // AJAX Request
-  function submitPost(params, handler) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-        handler("RESPONSE TEXT: " + this.responseText);
-      }
-    };
-    var requestBody = "userId=" + params.userId + "&title=" + params.title + "&content=" + params.content + "&public=" + params.public + "&image=" + params.image;	  
-    xhttp.open('POST', "/journal", true);
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");    
-    xhttp.send(requestBody);
-  }
+  // // AJAX Request
+  // function submitPost(params, handler) {
+  //   var xhttp = new XMLHttpRequest();
+  //   xhttp.onreadystatechange = function () {
+  //     if (this.readyState == 4 && this.status == 200) {
+  //       handler("RESPONSE TEXT: " + this.responseText);
+  //     }
+  //   };
+  //   var requestBody = "userId=" + params.userId + "&title=" + params.title + "&content=" + params.content + "&public=" + params.public + "&image=" + params.image;	  
+  //   xhttp.open('POST', "/journal", true);
+  //   xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");    
+  //   xhttp.send(requestBody);
+  // }
 
-  document.getElementById('theform').addEventListener('submit', function(e){
+   document.getElementById('theform').addEventListener('submit', function(e){
   	e.preventDefault();
 	var titleInput = document.getElementById('journaltitleinput');
 	var request = {
@@ -119,5 +121,3 @@
   	console.log(editor.children[0].innerHTML);
   })
 </script>
-
-

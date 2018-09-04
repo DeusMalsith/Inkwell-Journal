@@ -46,5 +46,16 @@ router.get('/:id', loggedIn, function(req, res) {
     });
 });
 
+router.delete('/:id', loggedIn, function(req, res) {
+//    console.log('hello');
+    db.journal.destroy({
+    where: {
+        id: req.params.id
+    }
+    }).then(function(result) {
+    res.send("success!");
+    });
+});
+
 
 module.exports = router;

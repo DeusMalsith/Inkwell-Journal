@@ -1,26 +1,23 @@
-<div class="container">
-	<img id="notebookopen" src="/img/notebookopen-min.png">
-	
-</div>
+<body style="background-image: url('../img/woodbackground2.jpg');">
 
 <div class="container">
 
 	<div class="container" id="journal-list">
-		<h2>JOURNAL</h2>
-
-		<a href="journal/new" type="submit">New Entry</a>
+		<h2 class="shadow-text">Journal Entries</h2>
+		
+		<a href="journal/new" class="waves-effect waves-light btn grey"><i class="material-icons left">edit</i>New Entry</a>
 
 		<%journals.forEach(function(journal) {%>
 			<div>
-				<hr>
 				<h4>
 					<a href="/journal/<%= journal.id%>">
 						<%= journal.title%>
 					</a>
+				<hr>
 				</h4>
 			</div>
 		<%});%>
 	</div>
 </div>
-
+</body>
 

@@ -12,8 +12,8 @@ var db = require('../models');
 
 //Define routes
 
-router.get('/', loggedIn, function(req, res) {
-	res.send('PUBLIC');
+router.get('/', function(req, res) {
+	res.render('public/public');
 })
 
 module.exports = router;

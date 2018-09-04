@@ -1,7 +1,21 @@
-<h2>
-	<%= journal.title%>
-</h2>
+<body style="background-image: url('../img/woodbackground2.jpg');">
 
-<p>
-	<%= journal.content%>
-</p>
+<div class="container" id="journal-entry-content">
+
+	<h2 class="center-align shadow-text">
+		<%= journal.title%>		
+	</h2>
+
+	<p id="width" class="shadow-text">
+		<%= journal.content%>
+	</p>
+	<br />
+	<br />
+	<div class="center-align">
+		<button href="/journal/<%= journal.id%>" class="btn waves-effect waves-light grey delete-btn" type="button" name="action">Delete
+		<i class="material-icons right"></i>
+		</button>				
+	</div>
+</div>
+
+</body>

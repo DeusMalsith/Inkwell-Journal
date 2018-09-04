@@ -1,11 +1,42 @@
+/*Generic CSS*/
 body {
 	background-image: url('../img/woodbackground.jpg');
 	background-size: cover no-repeat;
 	color: white;
 }
 
+.shadow-text {
+	text-shadow: 4px 4px 7px rgba(100, 100, 100, 0.50);
+}
+
+p {
+	font-size: 18px;
+}
+
+/*Profile CSS*/
 #profileimage {
 	width: 350px;
+}
+
+/*Signup CSS*/
+#signupform {
+	background-color: #262626;
+	padding: 20px;
+	border-radius: 20px;
+	margin-top: 100px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#signupbody {
+	color: black;
+}
+
+/*Login CSS*/
+#notebookclosed {
+	position: relative;
+	z-index: 1;
+	max-height: 820px;
+	margin-bottom: -600px;
 }
 
 #login-form-container {
@@ -19,22 +50,11 @@ body {
 	z-index: 2;
 }
 
-#profile-name {
-	text-align: center;
-}
-
-#test {
-	text-align: center;
-}
-
-#email {
+.form-text-white {
 	color: white;
 }
 
-#password {
-	color: white;
-}
-
+/*New Journal Entry CSS*/
 #editor-container {
 	background: white;
 }
@@ -44,23 +64,19 @@ body {
 	color: black;
 }
 
-#notebookclosed {
-	position: relative;
-	z-index: 1;
-	max-height: 820px;
-	margin-bottom: -600px;
-}
-
-#notebookopen {
-	position: relative;
-	left: -58%;
-	z-index: 1;
-	margin-bottom: -1200px;
-}
-
+/*Journal List CSS*/
 #journal-list {
 	position: relative;
-	max-width: 800px;
-	z-index: 2;
-	left: -20%;
+	margin-top: 100px;
+	margin-left: -100px;
+	max-width: 400px;
+}
+
+/*Journal Show CSS*/
+#journal-entry-content {
+	position: relative;
+	margin-top: 100px;
+	margin-left: 35px;
+	max-width: 600px;
+	overflow-wrap: break-word;
 }

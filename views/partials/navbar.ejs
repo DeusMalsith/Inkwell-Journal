@@ -1,17 +1,37 @@
-  <nav>
-    <div class="nav-wrapper grey darken-4">
-      <a href="#" class="brand-logo center">Inkwell</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <%if(currentUser){%>
-        <li><a href="/journal">Journal</a></li>
-        <li><a href="/journal/new">New Entry</a></li>
-        <li><a href="/public">Public Entries</a></li>
-        <li><a href="/profile">Profile</a></li>
-        <li><a href="/auth/logout">Logout</a></li>
-      <%} else {%>
-        <li><a href="/auth/login">Login</a></li>
-        <li><a href="/auth/signup">Signup</a></li>
-      <%}%>
-      </ul>
-    </div>
-  </nav>
+<nav>
+  <div class="nav-wrapper grey darken-4">
+    <a href="#!" class="brand-logo center">Inkwell</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <%if(currentUser){%>
+      <li><a href="/journal">Journal</a></li>
+      <li><a href="/journal/new">New Entry</a></li>
+      <li><a href="/profile">Profile</a></li>
+      <li><a href="/auth/logout">Logout</a></li>
+    <%} else {%>
+      <li><a href="/auth/login">Login</a></li>
+      <li><a href="/auth/signup">Signup</a></li>
+      <li><a href="/public">Public Entries</a></li>
+    <%}%>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <%if(currentUser){%>
+  <li><a href="/journal">Journal</a></li>
+  <li><a href="/journal/new">New Entry</a></li>
+  <li><a href="/profile">Profile</a></li>
+  <li><a href="/auth/logout">Logout</a></li>
+  <%} else {%>
+    <li><a href="/auth/login">Login</a></li>
+    <li><a href="/auth/signup">Signup</a></li>
+    <li><a href="/public">Public Entries</a></li>
+  <%}%>
+</ul>
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });  
+</script>

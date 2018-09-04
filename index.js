@@ -37,7 +37,6 @@ app.use(function(req, res, next) {
 // Include controllers
 app.use('/auth', require('./controllers/auth'));
 app.use('/profile', require('./controllers/profile'));
-app.use('/dashboard', require('./controllers/dashboard'));
 app.use('/journal', require('./controllers/journal'));
 app.use('/public', require('./controllers/public'));
 
