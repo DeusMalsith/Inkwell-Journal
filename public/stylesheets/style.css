@@ -8,12 +8,15 @@ body {
 	width: 350px;
 }
 
-#login-form {
-	background-color: grey;
+#login-form-container {
 	position: relative;
-	margin-top: 20%;
 	text-align: center;
-	max-width: 500px;
+	max-width: 400px;
+	z-index: 2;
+}
+
+#login-form {
+	z-index: 2;
 }
 
 #profile-name {
@@ -24,6 +27,14 @@ body {
 	text-align: center;
 }
 
+#email {
+	color: white;
+}
+
+#password {
+	color: white;
+}
+
 #editor-container {
 	background: white;
 }
@@ -31,4 +42,25 @@ body {
 #editor {
 	height: 400px;
 	color: black;
+}
+
+#notebookclosed {
+	position: relative;
+	z-index: 1;
+	max-height: 820px;
+	margin-bottom: -600px;
+}
+
+#notebookopen {
+	position: relative;
+	left: -58%;
+	z-index: 1;
+	margin-bottom: -1200px;
+}
+
+#journal-list {
+	position: relative;
+	max-width: 800px;
+	z-index: 2;
+	left: -20%;
 }
