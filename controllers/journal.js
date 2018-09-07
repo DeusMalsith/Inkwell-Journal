@@ -26,14 +26,28 @@ router.get('/new', loggedIn, function(req, res) {
     res.render('journal/new');
 });
 
+router.get('/edit/:id', loggedIn, function(req, res) {
+    db.journal.findById(req.params.id).then(function(foundJournal) {
+        res.render('journal/edit', {journal: foundJournal})
+    });
+});
+
+router.put('/edit/:id', loggedIn, function(req, res) {
+    db.journal.findById(req.params.id).then(function(foundJournal) {
+        foundJournal.title = req.body.title;
+        foundJournal.content = req.body.content;
+        foundJournal.save();
+    }).then(function(updatedJournal) {
+        res.send(req.params.id);
+    });
+});
+
 router.post('/', loggedIn, function(req, res) {
     var params = (req.body);
     params.userId = req.user.id;
     db.journal.create(params).then(function(createdJournal) {
-    res.send(createdJournal);
+    res.redirect('/journal/' + createdJournal.id);
     });
-   // res.send(params);
-    console.log(params);
 });
 
 router.get('/:id', loggedIn, function(req, res) {

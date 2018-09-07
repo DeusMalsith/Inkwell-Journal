@@ -27,7 +27,7 @@ p {
 }
 
 /*Edit Profile CSS*/
-#editform {
+.editform {
 	background-color: #262626;
 	padding: 20px;
 	border-radius: 20px;

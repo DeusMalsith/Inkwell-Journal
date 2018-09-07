@@ -4,6 +4,66 @@
 		"selected_items":
 		[
 			[
+				"creat",
+				"createdJournal"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"over",
+				"overflow-y\tproperty"
+			],
+			[
+				"mar",
+				"margin-bottom\tproperty"
+			],
+			[
+				"shad",
+				"box-shadow\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"form",
+				"form-text-white"
+			],
+			[
+				"font-",
+				"font-size\tproperty"
+			],
+			[
+				"overflo",
+				"overflow-wrap\tproperty"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"backgr",
+				"background-image\tproperty"
+			],
+			[
+				"objec",
+				"object-fit\tproperty"
+			],
+			[
+				"wid",
+				"max-width\tproperty"
+			],
+			[
+				"hei",
+				"height\tproperty"
+			],
+			[
+				"margi",
+				"margin-left\tproperty"
+			],
+			[
 				"get",
 				"getElementById"
 			],
@@ -14,10 +74,6 @@
 			[
 				"too",
 				"toolbarOptions"
-			],
-			[
-				"margin",
-				"margin-top\tproperty"
 			],
 			[
 				"login",
@@ -100,10 +156,6 @@
 				"expressEjsLAyouts"
 			],
 			[
-				"hei",
-				"line-height\tproperty"
-			],
-			[
 				"pokem",
 				"pokemonbattle"
 			],
@@ -184,10 +236,6 @@
 				"addListeners"
 			],
 			[
-				"pad",
-				"padding-right\tproperty"
-			],
-			[
 				"bor",
 				"border-right\tproperty"
 			],
@@ -228,20 +276,12 @@
 				"enemyAttack"
 			],
 			[
-				"mar",
-				"margin-left\tproperty"
-			],
-			[
 				"sti",
 				"static\tposition"
 			],
 			[
 				"st",
 				"sticky\tposition"
-			],
-			[
-				"backgr",
-				"background\tproperty"
 			],
 			[
 				"backgroud",
@@ -356,20 +396,12 @@
 				"inline-block\tdisplay"
 			],
 			[
-				"margi",
-				"margin\tproperty"
-			],
-			[
 				"list-st",
 				"list-style-position\tproperty"
 			],
 			[
 				"padd",
 				"padding-top\tproperty"
-			],
-			[
-				"shad",
-				"shape-outside\tproperty"
 			],
 			[
 				"tran",
@@ -422,14 +454,6 @@
 			[
 				"backgro",
 				"background-color\tproperty"
-			],
-			[
-				"max",
-				"max-width\tproperty"
-			],
-			[
-				"wid",
-				"width\tproperty"
 			],
 			[
 				"top",
@@ -490,67 +514,26 @@
 			[
 				"he",
 				"height\tproperty"
-			],
-			[
-				"san",
-				"san-francisco-2"
-			],
-			[
-				"padding",
-				"padding-right\tproperty"
-			],
-			[
-				"flex",
-				"flex-wrap\tproperty"
-			],
-			[
-				"inlin",
-				"inline-block\tdisplay"
-			],
-			[
-				"fon",
-				"font-size\tproperty"
-			],
-			[
-				"col",
-				"color\tproperty"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "views/journal/new.ejs",
+			"file": "public/ajax-calls.js",
 			"settings":
 			{
-				"buffer_size": 2287,
+				"buffer_size": 780,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "index.js",
+			"file": "views/journal/edit.ejs",
 			"settings":
 			{
-				"buffer_size": 1441,
+				"buffer_size": 364,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "controllers/journal.js",
-			"settings":
-			{
-				"buffer_size": 595,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".env",
-			"settings":
-			{
-				"buffer_size": 155,
 				"line_ending": "Unix"
 			}
 		},
@@ -558,7 +541,32 @@
 			"file": "views/journal/journal.ejs",
 			"settings":
 			{
-				"buffer_size": 67,
+				"buffer_size": 522,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/journal/new.ejs",
+			"settings":
+			{
+				"buffer_size": 267,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/journal/newBACKUP.ejs",
+			"settings":
+			{
+				"buffer_size": 3531,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controllers/journal.js",
+			"settings":
+			{
+				"buffer_size": 1826,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -627,43 +635,43 @@
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/config",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/middleware",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/migrations",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/models",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/public",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/public/img",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/public/stylesheets",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/auth",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/dashboard",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/partials",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/profile",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/public"
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/profile"
 	],
 	"file_history":
 	[
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/public/stylesheets/style.css",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/journal.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/index.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/auth.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/config/config.json",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/profile/index.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/layout.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/show.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/public/app.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/edit.ejs\nedit.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/newBACKUP.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/new.ejs",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/auth/login.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/journal.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/journal.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/profile/edit.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/public/ajax-calls.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/partials/navbar.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/edit.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/auth/signup.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/profile/index.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/auth.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/profile.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/auth/login.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/partials/alerts.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/public.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/public/public.ejs",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/index.js",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/.env",
+		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/config/config.json",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/notes.txt",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/README.md",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/layout.ejs",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/partials/navbar.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/dashboard.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/controllers/public.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/dashboard/dashboard.ejs",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/journal/journal.ejs",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/public/public.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/middleware/loggedIn.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/auth/signup.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/migrations/20180830171651-add-image-to-journals.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/models/journal.js",
 		"/home/justinrashall/GA-WDI/Code_Alongs/auth-tutorial/migrations/20180827152921-addfb.js",
@@ -671,7 +679,6 @@
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/models/index.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/migrations/20180823180215-create-user.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/migrations/20180829175732-create-journal.js",
-		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/views/partials/alerts.ejs",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/models/user.js",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/notes2.txt",
 		"/home/justinrashall/GA-WDI/Projects/Inkwell-Journal/package.json",
@@ -763,14 +770,7 @@
 		"/home/justin/GA-WDI/Labs_and_Homework/express-daily-planet-ajax/daily_planet_starter/views/layout.ejs",
 		"/home/justin/GA-WDI/Labs_and_Homework/express-daily-planet-ajax/daily_planet_starter/views/articles/index.ejs",
 		"/home/justin/GA-WDI/Labs_and_Homework/express-daily-planet-ajax/daily_planet_starter/views/articles/edit.ejs",
-		"/home/justin/GA-WDI/Labs_and_Homework/express-daily-planet-ajax/daily_planet_starter/views/articles/new.ejs",
-		"/home/justin/GA-WDI/Labs_and_Homework/express-daily-planet-ajax/daily_planet_starter/views/articles/show.ejs",
-		"/home/justin/GA-WDI/Code_Alongs/poker_tournament/poker_tournament.sublime-workspace",
-		"/home/justin/GA-WDI/Code_Alongs/poker_tournament/index.js",
-		"/home/justin/GA-WDI/Code_Alongs/poker_tournament/models/teamService.js",
-		"/home/justin/GA-WDI/Code_Alongs/poker_tournament/notes.txt",
-		"/home/justin/GA-WDI/Code_Alongs/poker_tournament/views/teams/index.ejs",
-		"/home/justin/GA-WDI/Code_Alongs/poker_tournament/views/teams/show.ejs"
+		"/home/justin/GA-WDI/Labs_and_Homework/express-daily-planet-ajax/daily_planet_starter/views/articles/new.ejs"
 	],
 	"find":
 	{
@@ -839,24 +839,81 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "views/journal/new.ejs",
+					"file": "public/ajax-calls.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2287,
+						"buffer_size": 780,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								993,
-								993
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/journal/edit.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/EJS 2/EJS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/journal/journal.ejs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
 							]
 						],
 						"settings":
@@ -868,109 +925,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1441,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								710,
-								710
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "controllers/journal.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 595,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								266,
-								266
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": ".env",
+					"file": "views/journal/new.ejs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 155,
+						"buffer_size": 267,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								155,
-								155
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "views/journal/journal.ejs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 67,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								67,
-								67
+								267,
+								267
 							]
 						],
 						"settings":
@@ -981,14 +953,73 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "views/journal/newBACKUP.ejs",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2473,
+								2473
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/EJS 2/EJS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1224.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 5,
+					"file": "controllers/journal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1826,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								979,
+								979
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1020,7 +1051,7 @@
 		"cols":
 		[
 			0.0,
-			0.457471264368,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1076,7 +1107,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 180.0,
+	"side_bar_width": 208.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

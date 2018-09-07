@@ -7,24 +7,25 @@ $(document).ready(function() {
 			url: url,
 			method: 'DELETE'
 		}).done(function(res) {
-			// console.log('Success', res);
 			window.location = '/' + url.split('/')[1];
 		}).fail(function(err) {
 			console.log('fail', err);
 		});
 	});
 
-    	$('#edit-journal').submit(function(e) {
+$('#edit-journal').submit(function(e) {
 		e.preventDefault();
-		console.log('about to submit PUT req');
+		console.log('Submit Passed');
 		var url = $(this).attr('action');
+		console.log(url);
 		$.ajax({
 			url: url,
 			method: "PUT",
 			data: $(this).serialize()
 		}).done(function(res){
+				console.log(res);
 		    console.log('Profile Edit Successful', res);
-		    window.location = '/' + url.split('/')[1];
+		    window.location = '/journal';
 		}).fail(function(err) {
 			console.log('Profile Edit Error', err);
 		});

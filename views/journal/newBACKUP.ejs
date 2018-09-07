@@ -1,0 +1,121 @@
+<div class="container" id="new-entry-form">
+	<!-- Include stylesheet -->
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+	<!-- Create the editor container -->
+
+	<div class="center-align">
+		<h2>NEW JOURNAL ENTRY</h2>
+	</div>
+	<form id="theform" method="POST" action="/journal">
+		<div class="row">
+	      <div class="input-field col s6">
+	         <input placeholder="Your title here" id="journaltitleinput" type="text" class="validate form-text-white">
+	          <label for="title">Journal Title</label>
+	      </div>
+		</div>
+
+		<p><u>Public Entry</u></p>
+		<!-- Switch -->
+	  <div class="switch">
+	  	<label for="public">
+	  		<label>
+	  		  No
+	  		  <input type="checkbox">
+	  		  <span class="lever"></span>
+	  		  Yes
+	  		</label>
+	  	</label>
+	  </div>
+	  <br />
+
+	<!-- 	<div class="file-field input-field">
+		  <div class="btn">
+		    <span>Main Image</span>
+		    <input type="file">
+		  </div>
+		  <div class="file-path-wrapper">
+		    <input class="file-path validate" type="text">
+		  </div>
+		</div> -->
+
+		<div id="editor-container">
+			<div id="editor"></div>
+		</div>
+
+		<div>
+			<br />
+			<button class="btn waves-effect waves-light grey right" type="submit" name="action">Submit
+			<i class="material-icons right">send</i>
+			</button>
+		</div>
+	</form>	
+</div>
+
+
+
+
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+	var toolbarOptions = [
+	  ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+	  ['blockquote', 'code-block'],
+
+	  [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+	  [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+	  [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+	  [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+	  [{ 'direction': 'rtl' }],                         // text direction
+
+	  [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+	  [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+	  ['link', 'image', 'video'],
+
+	  [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+	  [{ 'font': [] }],
+	  [{ 'align': [] }],
+
+	  ['clean']                                         // remove formatting button
+	];
+
+  var quill = new Quill('#editor', {
+	  modules: {
+		 toolbar: toolbarOptions
+	  },
+	  placeholder: 'Write your entry here...',
+	  theme: 'snow'
+	});
+
+  // AJAX Request
+  function submitPost(params, handler) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        handler("RESPONSE TEXT: " + this.responseText);
+      }
+    };
+    var requestBody = "userId=" + params.userId + "&title=" + params.title + "&content=" + params.content + "&public=" + params.public + "&image=" + params.image;	  
+    xhttp.open('POST', "/journal", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");    
+    xhttp.send(requestBody);
+  }
+
+   document.getElementById('theform').addEventListener('submit', function(e){
+  	e.preventDefault();
+	var titleInput = document.getElementById('journaltitleinput');
+	var request = {
+	    userId:"",
+	    title:titleInput.value,
+	    content:quill.getText(),
+	    public: true,
+	    image:""
+	};
+	submitPost(request, console.log);
+  	// console.log(quill.getContent());
+  	var editor = document.getElementById('editor');
+  	console.log(editor.children[0].innerHTML);
+  })
+</script>

@@ -1,5 +1,6 @@
 	$(document).ready(function(){
-	  $('.datepicker').datepicker({
-	  	selectYears: 40
-	  });
+	  // $('.datepicker').datepicker({
+	  // 	selectYears: 40
+	  // });
+	  $('.sidenav').sidenav();
 	});
