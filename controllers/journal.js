@@ -28,7 +28,11 @@ router.get('/new', loggedIn, function(req, res) {
 
 router.get('/edit/:id', loggedIn, function(req, res) {
     db.journal.findById(req.params.id).then(function(foundJournal) {
-        res.render('journal/edit', {journal: foundJournal})
+        if (foundJournal.id === req.user.id) {
+            res.render('journal/edit', {journal: foundJournal})
+        } else {
+            res.redirect('/');
+        }
     });
 });
 

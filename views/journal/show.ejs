@@ -11,7 +11,7 @@
 	</p>
 	<br />
 	<br />
-	<%if (currentUser) {%>
+	<%if (currentUser && currentUser.id === journal.userId) {%>
 		<div class="center-align">
 			<button href="/journal/<%= journal.id%>" class="btn waves-effect waves-light grey delete-btn" type="button" name="action">Delete
 			<i class="material-icons right"></i>
