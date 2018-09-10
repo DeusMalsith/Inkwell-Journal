@@ -50,36 +50,48 @@ router.post('/', loggedIn, function(req, res) {
     });
 });
 
-router.get('/:id', function(req, res) {
-    if (loggedIn) {
-        db.journal.findOne({
-                where: {
-                    id: req.params.id
-                }
-            }).then(function(journal) {
-                res.render('journal/show', {journal:journal})
-            });
-    } else {
-        db.journal.findOne({
-                where: {
-                    id: req.params.id,
-                    public: true
-                }
-            }).then(function(journal) {
-                res.render('journal/show', {journal:journal})
-            });
-    }
+router.get('/:id', loggedIn, function(req, res) {
+    db.journal.findOne({
+        where: {
+            id: req.params.id
+        }
+    }).then(function(journal) {
+        res.render('journal/show', {journal:journal})
+    });
 });
 
-// router.get('/:id', loggedIn, function(req, res) {
-//     db.journal.findOne({
-//         where: {
-//             id: req.params.id
-//         }
-//     }).then(function(journal) {
-//         res.render('journal/show', {journal:journal})
-//     });
+router.get('/public/:id', function(req, res) {
+    db.journal.findOne({
+        where: {
+            id: req.params.id,
+            public: true
+        }
+    }).then(function(journal) {
+        res.render('journal/show', {journal:journal})
+    });
+});
+
+// router.get('/:id', function(req, res) {
+//     if (loggedIn) {
+//         db.journal.findOne({
+//                 where: {
+//                     id: req.params.id
+//                 }
+//             }).then(function(journal) {
+//                 res.render('journal/show', {journal:journal})
+//             });
+//     } else {
+//         db.journal.findOne({
+//                 where: {
+//                     id: req.params.id,
+//                     public: true
+//                 }
+//             }).then(function(journal) {
+//                 res.render('journal/show', {journal:journal})
+//             });
+//     }
 // });
+
 
 router.delete('/:id', loggedIn, function(req, res) {
 //    console.log('hello');
