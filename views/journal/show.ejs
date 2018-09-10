@@ -11,14 +11,16 @@
 	</p>
 	<br />
 	<br />
-	<div class="center-align">
-		<button href="/journal/<%= journal.id%>" class="btn waves-effect waves-light grey delete-btn" type="button" name="action">Delete
-		<i class="material-icons right"></i>
-		</button>
+	<%if (currentUser) {%>
+		<div class="center-align">
+			<button href="/journal/<%= journal.id%>" class="btn waves-effect waves-light grey delete-btn" type="button" name="action">Delete
+			<i class="material-icons right"></i>
+			</button>
 
-		<a href="/journal/edit/<%= journal.id%>" class="waves-effect waves-light btn grey"></i>Edit Entry</a>
-		</a>	
-	</div>
+			<a href="/journal/edit/<%= journal.id%>" class="waves-effect waves-light btn grey"></i>Edit Entry</a>
+			</a>
+		</div>
+	<%}%>	
 </div>
 
 </body>

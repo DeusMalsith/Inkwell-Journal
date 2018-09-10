@@ -10,10 +10,16 @@ var loggedIn = require('../middleware/loggedIn');
 // Require Models
 var db = require('../models');
 
-//Define routes
+// Define routes
 
 router.get('/', function(req, res) {
-	res.render('public/public');
-})
+    db.journal.findAll({
+    where: {
+        public: true
+    }
+    }).then(function(userJournals) {
+    res.render('public/public', {journals: userJournals})
+    });
+  });
 
 module.exports = router;
