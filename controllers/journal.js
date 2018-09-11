@@ -28,7 +28,9 @@ router.get('/new', loggedIn, function(req, res) {
 
 router.get('/edit/:id', loggedIn, function(req, res) {
     db.journal.findById(req.params.id).then(function(foundJournal) {
-        if (foundJournal.id === req.user.id) {
+        console.log(foundJournal.id);
+        console.log(req.user.id);
+        if (foundJournal.userId === req.user.id) {
             res.render('journal/edit', {journal: foundJournal})
         } else {
             res.redirect('/');
